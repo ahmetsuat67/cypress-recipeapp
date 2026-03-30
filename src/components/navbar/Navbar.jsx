@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <Nav>
-      <Logo onClick={() => setIsOpen(false)} to="/home">
+      <Logo data-test="homeLogo" onClick={() => setIsOpen(false)} to="/home">
         <i>{`<ASP/>`}</i>
         <span>recipe</span>
       </Logo>
@@ -18,7 +18,7 @@ const Navbar = () => {
       </Hamburger>
 
       <Menu hamburOpen={isOpen}>
-        <MenuLink to="/about" onClick={() => setIsOpen(false)}>
+        <MenuLink data-test="homeAbout" to="/about" onClick={() => setIsOpen(false)}>
           About
         </MenuLink>
 

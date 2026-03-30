@@ -39,7 +39,7 @@ const Details = () => {
   return (
     <DetailContainer>
       <HeaderContainer>
-        <h1>{recipeDet.label}</h1>
+        <h1 data-test="contentHeader">{recipeDet.label}</h1>
         <img src={dietSvg} alt="" />
       </HeaderContainer>
 
@@ -47,7 +47,7 @@ const Details = () => {
         <OtherPart>
           <>Nutrients</>
 
-          <p>Category: {category}</p>
+          <p data-test="contentParag">Category: {category}</p>
           <p>Area: {area}</p>
 
           {tags.length > 0 && (
@@ -70,7 +70,7 @@ const Details = () => {
         </OtherPart>
 
         <ImgContainer>
-          <img src={recipeDet.image} alt={recipeDet.label} />
+          <img data-test="contentImage" src={recipeDet.image} alt={recipeDet.label} />
         </ImgContainer>
 
         <IngredContainer>
