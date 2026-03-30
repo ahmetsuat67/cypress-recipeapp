@@ -49,12 +49,3 @@ Project aims to create a Recipe App.
 ├── package.json
 └── yarn.lock
 ```
-
-
-
-![Recipe App](recipe-app.gif)
-
-## Objective
-
-Build a Recipe App using ReactJS.<br/>
-[Recipe App](https://anthonyharold-recipeapp.herokuapp.com/)
