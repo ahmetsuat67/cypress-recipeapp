@@ -27,18 +27,19 @@ const Login = () => {
     <LoginContainer>
       <FormContainer>
         <StyledImg src={meal} alt="meal" />
-        <Header>{`<ASP/>`}Recipe</Header>
+        <Header data-test="loginHeader">{`<ASP/>`}Recipe</Header>
 
         <StyledForm onSubmit={loginSubmit}>
           <StyledInput
+            data-test="loginName"
             type="text"
             placeholder="Username"
             name="username"
             onChange={(e) => setUsername(e.target.value)}
             required
           />
-          <StyledInput type="password" placeholder="Password" required />
-          <StyledButton type="submit">Login</StyledButton>
+          <StyledInput data-test="loginPassword" type="password" placeholder="Password" required />
+          <StyledButton data-test="loginSbmt" type="submit">Login</StyledButton>
         </StyledForm>
       </FormContainer>
     </LoginContainer>
